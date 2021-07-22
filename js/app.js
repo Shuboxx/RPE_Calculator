@@ -5,10 +5,6 @@ let calc = document.querySelector('#calculate')
 
 calc.addEventListener('click', calcMaxWeight)
 
-function round5(weight) {
-  return Math.round(weight / 5) * 5
-}
-
 function calcMaxWeight(weight, reps) {
   weight = Number(document.querySelector('#weight').value)
   reps = Number(document.querySelector('#reps').value)
