@@ -16,7 +16,8 @@ function calcMaxWeight(weight, reps) {
     console.log(weight)
   } else {
     let estimatedMaxWeight = weight * (1 + (reps / 30))
-    console.log(Math.floor(estimatedMaxWeight / 5) * 5)
+    let roundedMax = (Math.floor(estimatedMaxWeight / 5) * 5)
+    maxWeight.innerText = roundedMax
   }
 }
 // weight(1 + reps / 30)
