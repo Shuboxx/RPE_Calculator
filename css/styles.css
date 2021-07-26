@@ -2,6 +2,11 @@
   display: none;
 }
 
+.active {
+  color: hsl(0, 0%, 100%);
+  background: hsl(27, 100%, 50%);
+}
+
 .greyUnderline {
   border-bottom: 1px solid hsl(0, 0%, 50%);
 }
@@ -44,6 +49,10 @@ section.flex-container {
   justify-content: space-between;
 }
 
+section > div {
+  margin-bottom: 5px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -67,4 +76,5 @@ ul li a:visited {
 #outputHeader {
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 10px;
 }
