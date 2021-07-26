@@ -11,43 +11,170 @@
 </head>
 
 <body>
-  <label for="weight">weight:</label>
-  <input type="text" id="weight">
-  <label for="reps">reps:</label>
-  <select name="reps" id="reps">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-  </select>
-  <label for="rpe">rpe: </label>
-  <select name="rpe" id="rpe">
-    <option value="10">10</option>
-    <option value="9">9</option>
-    <option value="8">8</option>
-    <option value="7">7</option>
-    <option value="6">6</option>
-  </select>
-  <button id="calculate">Calculate</button>
-  <h2 id="output"></h2>
+  <section class="main-container">
+    <section id="userInput" class="flex-container">
+      <label for="weight">Weight:</label>
+      <input type="text" id="weight">
+      <label for="reps">Reps:</label>
+      <select name="reps" id="reps">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+      <label for="rpe">RPE: </label>
+      <select name="rpe" id="rpe">
+        <option value="10">10</option>
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+      </select>
+      <button id="calculate">Calculate</button>
+    </section>
 
-  <section id="oneRep">
-    <div id="oneTen"></div>
-    <div id="oneNine"></div>
-    <div id="oneEight"></div>
-    <div id="oneSeven"></div>
-    <div id="oneSix"></div>
+    <h2 id="output"></h2>
+
+    <section id="repsButtons" class="flex-container greyUnderline">
+      <h2>Reps</h2>
+      <ul class="flex-container">
+        <li><a data-oneRep href="#oneRep">1</a></li>
+        <li><a data-twoRep href="#twoRep">2</a></li>
+        <li><a data-threeRep href="#threeRep">3</a></li>
+        <li><a data-fourRep href="#fourRep">4</a></li>
+        <li><a data-fiveRep href="#fiveRep">5</a></li>
+        <li><a data-sixRep href="#sixRep">6</a></li>
+        <li><a data-sevenRep href="#sevenRep">7</a></li>
+        <li><a data-eightRep href="#eightRep">8</a></li>
+        <li><a data-nineRep href="#nineRep">9</a></li>
+        <li><a data-tenRep href="#tenRep">10</a></li>
+        <li><a data-elevenRep href="#elevenRep">11</a></li>
+        <li><a data-twelveRep href="#twelveRep">12</a></li>
+      </ul>
+    </section>
+
+    <section id="outputHeader" class="grid-container greyUnderline">
+      <h2 class="col-6 centerText">RPE</h2>
+      <h2 class="col-6 centerText">Weight</h2>
+    </section>
+
+    <section id="estimatedWeights" class="grid-container">
+
+      <section id="rpeValues" class="centerText col-6">
+        <div>10</div>
+        <div>9</div>
+        <div>8</div>
+        <div>7</div>
+        <div>6</div>
+      </section>
+
+      <section id="oneRep" class="col-6 centerText">
+        <div id="oneTen"></div>
+        <div id="oneNine"></div>
+        <div id="oneEight"></div>
+        <div id="oneSeven"></div>
+        <div id="oneSix"></div>
+      </section>
+
+      <section id="twoReps" class="col-6 centerText hidden">
+        <div id="twoTen"></div>
+        <div id="twoNine"></div>
+        <div id="twoEight"></div>
+        <div id="twoSeven"></div>
+        <div id="twoSix"></div>
+      </section>
+
+      <section id="threeReps" class="col-6 centerText hidden">
+        <div id="threeTen"></div>
+        <div id="threeNine"></div>
+        <div id="threeEight"></div>
+        <div id="threeSeven"></div>
+        <div id="threeSix"></div>
+      </section>
+
+      <section id="fourReps" class="col-6 centerText hidden">
+        <div id="fourTen"></div>
+        <div id="fourNine"></div>
+        <div id="fourEight"></div>
+        <div id="fourSeven"></div>
+        <div id="fourSix"></div>
+      </section>
+
+      <section id="fiveReps" class="col-6 centerText hidden">
+        <div id="fiveTen"></div>
+        <div id="fiveNine"></div>
+        <div id="fiveEight"></div>
+        <div id="fiveSeven"></div>
+        <div id="fiveSix"></div>
+      </section>
+
+      <section id="sixReps" class="col-6 centerText hidden">
+        <div id="sixTen"></div>
+        <div id="sixNine"></div>
+        <div id="sixEight"></div>
+        <div id="sixSeven"></div>
+        <div id="sixSix"></div>
+      </section>
+
+      <section id="sevenReps" class="col-6 centerText hidden">
+        <div id="sevenTen"></div>
+        <div id="sevenNine"></div>
+        <div id="sevenEight"></div>
+        <div id="sevenSeven"></div>
+        <div id="sevenSix"></div>
+      </section>
+
+      <section id="eightReps" class="col-6 centerText hidden">
+        <div id="eightTen"></div>
+        <div id="eightNine"></div>
+        <div id="eightEight"></div>
+        <div id="eightSeven"></div>
+        <div id="eightSix"></div>
+      </section>
+
+      <section id="nineReps" class="col-6 centerText hidden">
+        <div id="nineTen"></div>
+        <div id="nineNine"></div>
+        <div id="nineEight"></div>
+        <div id="nineSeven"></div>
+        <div id="nineSix"></div>
+      </section>
+
+      <section id="tenReps" class="col-6 centerText hidden">
+        <div id="tenTen"></div>
+        <div id="tenNine"></div>
+        <div id="tenEight"></div>
+        <div id="tenSeven"></div>
+        <div id="tenSix"></div>
+      </section>
+
+      <section id="elevenReps" class="col-6 centerText hidden">
+        <div id="elevenTen"></div>
+        <div id="elevenNine"></div>
+        <div id="elevenEight"></div>
+        <div id="elevenSeven"></div>
+        <div id="elevenSix"></div>
+      </section>
+
+      <section id="twelveReps" class="col-6 centerText hidden">
+        <div id="twelveTen"></div>
+        <div id="twelveNine"></div>
+        <div id="twelveEight"></div>
+        <div id="twelveSeven"></div>
+        <div id="twelveSix"></div>
+      </section>
+    </section>
   </section>
 </body>
 

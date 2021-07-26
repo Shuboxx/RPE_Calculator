@@ -1,0 +1,70 @@
+.hidden {
+  display: none;
+}
+
+.greyUnderline {
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+.centerText {
+  text-align: center;
+}
+
+.main-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#userInput {
+  margin: 0 auto;
+  width: 100%;
+  height: 4em;
+  border: 1px solid black;
+  justify-content: space-evenly;
+}
+
+#repsButtons {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#repButtons {
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.flex-container {
+  justify-content: space-between;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+ul li a,
+ul li a:visited {
+  text-decoration: none;
+  color: hsl(240, 100%, 50%);
+}
+
+#outputHeader {
+  margin: 0 auto;
+  width: 100%;
+}
