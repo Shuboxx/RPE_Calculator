@@ -5,6 +5,8 @@
 .active {
   color: hsl(0, 0%, 100%);
   background: hsl(27, 100%, 50%);
+  width: 2em;
+  height: 2em;
 }
 
 .greyUnderline {
